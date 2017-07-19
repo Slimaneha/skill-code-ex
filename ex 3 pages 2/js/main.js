@@ -1,10 +1,14 @@
 // variables 
 
-var prix1 = 20
-var prix2 = 30
-var prix3 = 40
+var prix1 = 20 ;  
+var prix2 = 30 ;
+var prix3 = 40 ;
 var devise = "EURO"
-var  resulat = ""
+var  resulat = prix1 + prix2 + prix3 ; 
+var x = 20 ;
+var y = 100 ;
+
+var prixPromo = resulat % x ; 
 
 
 
@@ -24,7 +28,11 @@ document.querySelector(".prix1").innerHTML = `
   `
 document.querySelector(".total").innerHTML = ` 
   
-   ${prix1 + prix2 + prix3  }    ${devise}
-  `
+   ${ prixPromo}    ${devise}` 
+
+   document.querySelector(".totalr").innerHTML=`
+    ${ resulat }
+   
+   `
 
  
