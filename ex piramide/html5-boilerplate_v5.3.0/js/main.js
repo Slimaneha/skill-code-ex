@@ -1,22 +1,26 @@
+var result = ''
 
 
-var etoile ='';
-
-
-for (var i =1 ; i<=5; i++) {
-
-    for (var j=1; j<=i;j++) {
-
-        etoile+= "*";
+for (i=0; i<8; i++) {
+  
+  for (j=0; j<8; j++) {
+    
+     if (i % 2 === 0) {
       
-    }
-    etoile += '\n';
-    //
-
+       if (j % 2 === 0) {
+         result += '#';
+       } else { result += '0';
+       }
+        
+    } else {
+      
+       if (j % 2 == 0) {
+         result += '0';
+       } else
+         result += '#';      
+     }    
+   }
+  result += '\n';
 }
-console.log(etoile);
 
-
-
-
-                    
+console.log(result);
